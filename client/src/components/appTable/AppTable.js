@@ -4,7 +4,7 @@ import { Container, Button, Table, Form, Row, Col } from 'react-bootstrap';
 import TableNav from '../tableNav/TableNav';
 import TableItems from '../tableItems/TableItems';
 
-const fetchtabledata = async () => fetch('http://localhost:8080/api/xml')
+const fetchtabledata = async () => fetch('/api/xml')
 .then(res => res.json());
 
 const AppTable = () => {
